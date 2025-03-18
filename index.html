@@ -7,7 +7,7 @@
 	<meta name="description" content="Nina Carducci, photographe professionnelle. Shooting photo, retouches et albums personnalisés en Île-de-France.">
 	
 	<!-- Préchargement des ressources critiques -->
-	<link rel="preload" href="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-small.webp" as="image" type="image/webp">
+	<link rel="preload" href="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" as="image" type="image/webp">
 	<link rel="preload" href="./assets/bootstrap/bootstrap.css" as="style">
 	<link rel="preload" href="./assets/style.css" as="style">
 	
@@ -27,6 +27,7 @@
 	<script src="./assets/scripts.js" defer></script>
 </head>
 <body>
+<!-- Barre de navigation principale avec logo et liens de menu -->
 <div class="top-header">
 	<h3 class="name">Nina Carducci</h3>
 	<div class="nav">   
@@ -39,6 +40,7 @@
 		</ul>
 	</div>
 </div>
+<!-- Carrousel d'images en en-tête présentant différents types de photographie -->
 <div id="header">
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-indicators">
@@ -94,6 +96,7 @@
 		</button>
 	</div>
 </div>
+<!-- Section de présentation de la photographe avec photo et texte biographique -->
 <div id="about">
 	<div class="picture left">
 		<img src="./assets/images/nina-small.webp" 
@@ -105,11 +108,12 @@
 	</div>
 	<div id="about-me">
 		<h3 class="about-me__title">A propos de moi</h3>
-		<h6 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j'y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h6>
+		<p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j'y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
 		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n'avons qu'une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 			C'est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l'amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 	</div>
 </div>
+<!-- Galerie de photos organisée par catégories (concerts, entreprises, mariages, portraits) -->
 <div id="gallery">
 	<h3 class="title">Portfolio</h3>
 	<div class="container py-3">
@@ -196,6 +200,7 @@
                  decoding="async"/>
 		</div>
 	</div>
+	<!-- Citation inspirante sur la photographie -->
 	<div class="quote">
 		<figure>
 			<blockquote>
@@ -205,8 +210,9 @@
 		</figure>
 	</div>
 </div>
+<!-- Section présentant les services proposés et leurs tarifs -->
 <div id="services">
-	<h3 class="title">Mes services</h3>
+<h3 class="title">Mes services</h3>
 	<div class="container">
 		<div class="service">
 			<div class="service__description">
@@ -240,6 +246,7 @@
 		</div>
 	</div>
 </div>
+<!-- Seconde citation inspirante sur l'art de la photographie -->
 <div class="quote">
 	<figure>
 		<blockquote>
@@ -248,10 +255,11 @@
 		<figcaption class="quote__author">- Richard Avedon</figcaption>
 	</figure>
 </div>
+<!-- Formulaire de contact pour demandes de devis et questions -->
 <div id="contact">
 	<div class="container">
 		<div class="form-container">
-			<h3>Une question ? Une demande de devis ?</h3>
+			<h2>Une question ? Une demande de devis ?</h2>
 			<p> N'hésitez pas à m'écrire ! Je vous répondrais en moins de 24 heures</p>
 			<form action="" method="post">
 				<label for="nom">Nom</label>
@@ -264,15 +272,7 @@
 			</form>
 		</div>
 		<div class="picture right">
-			<img src="./assets/images/camera-small.webp" 
-                 srcset="./assets/images/camera-small.webp 280w,
-                         ./assets/images/camera.webp 560w"
-                 sizes="(max-width: 767px) 280px, 560px"
-                 alt="Appareil photo vintage" 
-                 width="560" height="560" 
-                 loading="lazy" 
-                 decoding="async">
-		</div>
+			<img src="./assets/images/camera.webp" alt="Appareil photo professionnel" width="560" height="560">
 	</div>
 </div>
 </body>
