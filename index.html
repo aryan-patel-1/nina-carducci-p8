@@ -21,13 +21,48 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 	
 	<!-- Scripts JavaScript avec chargement différé -->
-	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
-	<script src="./assets/maugallery.js" defer></script>
-	<script src="./assets/scripts.js" defer></script>
+<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
+<script src="./assets/maugallery.js" defer></script>
+<script src="./assets/scripts.js" defer></script>
+
+	<!-- Schema.org pour Rich Snippets -->
+
+<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "LocalBusiness",
+	  "name": "Nina Carducci Photographie",
+	  "image": "./assets/images/nina.webp",
+	  "description": "Nina Carducci, photographe professionnelle. Shooting photo, retouches et albums personnalisés en Île-de-France.",
+	  "address": {
+		"@type": "PostalAddress",
+		"streetAddress": "68 avenue Alsace-Lorraine",
+		"addressLocality": "Bordeaux",
+		"postalCode": "33200",
+		"addressCountry": "FR"
+	  },
+	  "geo": {
+		"@type": "GeoCoordinates",
+		"latitude": "44.8378",
+		"longitude": "-0.5792"
+	  },
+	  "telephone": "0556677889",
+	  "openingHoursSpecification": [
+		{
+		  "@type": "OpeningHoursSpecification",
+		  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+		  "opens": "10:00",
+		  "closes": "19:00"
+		}
+	  ],
+	  "sameAs": ["https://www.instagram.com/ninacarducci.photo/?hl=fr"]
+	}
+	</script>
 </head>
 <body>
+
 <!-- Barre de navigation principale avec logo et liens de menu -->
+
 <div class="top-header">
 	<h3 class="name">Nina Carducci</h3>
 	<div class="nav">   
@@ -40,7 +75,9 @@
 		</ul>
 	</div>
 </div>
+
 <!-- Carrousel d'images en en-tête présentant différents types de photographie -->
+
 <div id="header">
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-indicators">
@@ -96,7 +133,9 @@
 		</button>
 	</div>
 </div>
+
 <!-- Section de présentation de la photographe avec photo et texte biographique -->
+
 <div id="about">
 	<div class="picture left">
 		<img src="./assets/images/nina-small.webp" 
@@ -113,7 +152,9 @@
 			C'est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l'amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 	</div>
 </div>
+
 <!-- Galerie de photos organisée par catégories (concerts, entreprises, mariages, portraits) -->
+
 <div id="gallery">
 	<h3 class="title">Portfolio</h3>
 	<div class="container py-3">
@@ -200,7 +241,9 @@
                  decoding="async"/>
 		</div>
 	</div>
+
 	<!-- Citation inspirante sur la photographie -->
+
 	<div class="quote">
 		<figure>
 			<blockquote>
@@ -210,9 +253,11 @@
 		</figure>
 	</div>
 </div>
+
 <!-- Section présentant les services proposés et leurs tarifs -->
+
 <div id="services">
-<h3 class="title">Mes services</h3>
+<h2 class="title">Mes services</h2>
 	<div class="container">
 		<div class="service">
 			<div class="service__description">
@@ -246,7 +291,9 @@
 		</div>
 	</div>
 </div>
-<!-- Seconde citation inspirante sur l'art de la photographie -->
+
+<!-- Seconde citation -->
+
 <div class="quote">
 	<figure>
 		<blockquote>
@@ -255,7 +302,9 @@
 		<figcaption class="quote__author">- Richard Avedon</figcaption>
 	</figure>
 </div>
+
 <!-- Formulaire de contact pour demandes de devis et questions -->
+ 
 <div id="contact">
 	<div class="container">
 		<div class="form-container">
