@@ -5,7 +5,6 @@ body {
 * {
 	font-family: 'Inter';
 	font-style: normal;
-	box-sizing: border-box;
 }
 .top-header {
 	background-color: white;
@@ -63,7 +62,6 @@ body {
 }
 
 .picture {
-	position: relative;
 	flex: 1;
 	margin: 0 20px;
 	z-index: 0;
@@ -85,15 +83,15 @@ body {
 	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
-	max-width: 600px;
+	width: 60%;
 }
 #about-me p {
-	max-width: 800px;
+	width: 80%;
 	font-size: 14px;
 }
 
 #gallery {
-	min-height: 100vh; 
+	/*	min-height: 100vh; */
 }
 .title{
 	text-align: center;
@@ -103,9 +101,9 @@ body {
 	justify-content: center;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
-	background-color: #BEB45A;
-	border-radius:0 ;
+	color: #000;
+    background-color: #beb45a;
+    border-radius: 0;
 }
 .nav-pills .nav-link {
 	color: #000
@@ -131,7 +129,7 @@ body {
 .mg-prev, .mg-next {
 	width: 30px;
 	height: 30px;
-	border-radius: 50%;
+	border-radius: 00%;
 	justify-content: center;
 	align-items: center;
 	display: flex;
@@ -174,7 +172,6 @@ body {
 }
 
 #services .container {
-	position: relative;
 	justify-content: space-between;
 	display: flex;
 	padding : 2em 0;
@@ -191,7 +188,6 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	z-index: 1;
-	min-width: 250px;
 }
 
 #contact {
@@ -358,3 +354,66 @@ input[type="submit"] {
 	}
 }
 
+/* Optimisation des images du carousel (LCP) */
+.carousel-item img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	aspect-ratio: 16/9;
+	contain: layout paint;
+	max-height: 1080px;
+  }
+  
+  /* Optimisation des images de la galerie */
+  .gallery-item {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	padding: .5em;
+	contain: layout paint;
+  }
+  
+  /* Optimisation pour les images de profil et d'appareil photo */
+  .picture img {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+	max-width: 560px;
+  }
+  
+  /* Règles spécifiques pour les appareils mobiles */
+  @media all and (max-width: 767px) {
+	.carousel-item img {
+	  aspect-ratio: 4/3;
+	}
+	
+	.picture img {
+	  max-width: 280px;
+	}
+  }
+  
+  /* Préchargement des polices pour éviter FOUT */
+  html {
+	font-display: swap;
+  }
+  
+  /* Optimisation du contenu visible en premier (above the fold) */
+  .top-header, #header {
+	content-visibility: auto;
+	contain-intrinsic-size: auto 100px 500px;
+  }
+
+  .visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+    color: #000 !important; /* Noir par défaut */
+    background-color: #fff !important; /* Blanc par défaut */
+}
